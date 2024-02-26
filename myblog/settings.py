@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e#b__vghpa#4v#y3mpx-p=&$7&nx@uvp=0-bcj#e-(3oxm1mgj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['172.18.73.14']
 
 SITE_ID = 1
 # Application definition
@@ -83,7 +83,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'blog',
         'USER': 'blog',
-        'PASSWORD': 'Orien001$1'
+        'PASSWORD': 'Orien001$1',
+	'HOST': 'localhost',
+	'PORT': '5432',
     }
 }
 
